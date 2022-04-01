@@ -27,12 +27,14 @@ To prevent overfitting, a grid search with cross validation was utilized to dete
  
 ## Results
 ### Statistical Analysis
+![boxplot-predicted](https://github.com/AleksKostrycka/Movie_Review_Project/blob/4fee0e4afcf183af4230741015e85ceef49ed1e0/Images/Boxplot%20of%20Predicted%20Scores.png)
 ### Machine Learning Model
 The preliminary r² score for the linear regression, random forest, and gradient boost models were -2.55, 0.41, and 0.37, respectively. Further feature engineering of the linear regression machine learning model did not improve the metrics. The best metrics for the linear regression model was an r² score of 0.35, which was lower than the preliminary models of the random forest and gradient boost regression models, so the linear regression model was ultimately discarded.
 After feature engineering of the remaining models as described above, the model metrics r², root mean square error (RMSE) and mean absolute error (MAE) came out to be 0.43, 0.81, and 0.47 for the random forest model and 0.37, 0.88, and 0.59 for the gradient boost model. After the grid search with cross validation, the random forest was determined to be the most robust supervised machine learning model for our prediction with an r² score of 0.43, RMSE of 0.77, and MAE of 0.45. This means that with our random forest supervised machine learning model, 43% of the variance can be explained by the original model, there is an average squared error of 0.77, and an average of 0.45 difference between the expected and actual IMDb ratings.
 Although the r² score appears to be on the low side, it is actually expected with our dataset. Due to the arduous nature of the data and our analysis, we did not expect to find a great linear relationship between the features and the IMDb rating. Additionally, the other model metrics, RMSE and MAE were fairly low, indicating an accurate model. Furthermore, overfitting the data was not a large concern as we took steps to prevent this. 
+![graph](https://github.com/AleksKostrycka/Movie_Review_Project/blob/4fee0e4afcf183af4230741015e85ceef49ed1e0/Images/Actual%20vs.%20Predicted%20Graph.png)
+![chart](https://github.com/AleksKostrycka/Movie_Review_Project/blob/4fee0e4afcf183af4230741015e85ceef49ed1e0/Images/Actual%20vs.%20Predicted%20Ratings.png)
 
- 
-## Further Research
-INCLUDE A FEATURE THAT LISTS COSTARS OR CODIRECTORS
+## Conclusion
+In the end, our machine learning model was able to predict IMDb ratings with an average error of ±0.45. To reduce this error, more data points and features would be necessary. For future analysis, a Co-star feature would be recommended as many movies have more than one starring actor or actress. This will reduce the number of names that appears only once in the dataset, which can lead to a more robust prediction of IMDb rating. Additionally, it would have been preferable to have included the Budget feature into the machine learning model. Although there is a weak correlation between budget and the outcome of a movie, it would have been advantageous to include in the machine learning algorithm.
 
