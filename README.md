@@ -31,7 +31,7 @@ To prevent overfitting, a grid search with cross validation was utilized to dete
  
 ## Results
 ### Statistical Analysis
-![boxplot-predicted](https://github.com/AleksKostrycka/Movie_Review_Project/blob/4fee0e4afcf183af4230741015e85ceef49ed1e0/Images/Boxplot%20of%20Predicted%20Scores.png)
+
 ### Machine Learning Model
 The preliminary r² score for the linear regression, random forest, and gradient boost models were -2.55, 0.41, and 0.37, respectively. Further feature engineering of the linear regression machine learning model did not improve the metrics. The best metrics for the linear regression model was an r² score of 0.35, which was lower than the preliminary models of the random forest and gradient boost regression models, so the linear regression model was ultimately discarded.
 After feature engineering of the remaining models as described above, the model metrics r², root mean square error (RMSE) and mean absolute error (MAE) came out to be 0.43, 0.81, and 0.47 for the random forest model and 0.37, 0.88, and 0.59 for the gradient boost model. After the grid search with cross validation, the random forest was determined to be the most robust supervised machine learning model for our prediction with an r² score of 0.43, RMSE of 0.76, and MAE of 0.45. This means that with our random forest supervised machine learning model, 43% of the variance can be explained by the original model, there is an average squared error of 0.76, and an average of 0.45 difference between the expected and actual IMDb ratings.
