@@ -77,6 +77,30 @@ To prevent overfitting, a grid search with cross validation was utilized to dete
  
 ## Results
 ### Statistical Analysis
+More detailed descriptive statistics are available in Statistical_Analysis.ipynb
+
+**Which studio produces the highest rated movies?**
+
+![enter image description here](https://raw.githubusercontent.com/AleksKostrycka/Movie_Review_Project/main/Images/Studio_1.png)
+![enter image description here](https://raw.githubusercontent.com/AleksKostrycka/Movie_Review_Project/main/Images/Studio_2.png)
+
+In order to account for the large quantity of studios producing small amounts of films, a 5 film threshold was used to filter the results.  They were then ranked by median, wherein we see the most popular studios.
+-   Pixar Animation Studios
+-   Studio Ghibli
+-   CJ Entertainment
+-   Bandai Visual Company
+-  Marvel
+-   Participant
+-   ARTE
+
+
+**What genre is the most popular? (the highest rated)**
+
+![enter image description here](https://raw.githubusercontent.com/AleksKostrycka/Movie_Review_Project/main/Images/genre_1.png)
+![enter image description here](https://raw.githubusercontent.com/AleksKostrycka/Movie_Review_Project/main/Images/genre_2.png)
+
+While making note that musical/music and biography had the highest by median; comedy, action, and drama produce so many films as to make up ~75% of the data.  Taking into account that studios are picking these 3 the most often, drama stands above the others.
+
 
 ### Machine Learning Model
 The preliminary r² score for the linear regression, random forest, and gradient boost models were -2.55, 0.41, and 0.37, respectively. Further feature engineering of the linear regression machine learning model did not improve the metrics. The best metrics for the linear regression model was an r² score of 0.35, which was lower than the preliminary models of the random forest and gradient boost regression models, so the linear regression model was ultimately discarded.
