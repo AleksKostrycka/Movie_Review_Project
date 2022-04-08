@@ -1,4 +1,6 @@
 # Movie_Review_Project
+
+[Presentation Link](https://docs.google.com/presentation/d/1vb4TYz1PJbB1yf3d5MqWInjriQZxgpf3eO_mglC_x1Y/edit?usp=sharing)
 ## Overview
 
 The purpose of this analysis is to predict the IMDb score of movies based on several parameters, including genre, rating, release date, director, and much more. Each year, hundreds of films are produced worldwide and some are exceptionally successful, and others are surprisingly not. The goal of this project is to predict the success, measured by their IMDb rating, of upcoming films by first analyzing which features contribute heavily to the outcome of the movie, then creating a supervised machine learning model that will predict the IMDb rating. In addition to the supervised machine learning model that we intend to create to predict a movie rating, we are also focusing on several attributes and exploring if there is a correlation between those attributes and the final rating of movies.
