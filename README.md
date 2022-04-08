@@ -53,7 +53,20 @@ The ETL process was as follow, extracting the two CSV files, the movie dataset a
 The inflation dataset was transformed to be able to merge with the movie data set. These prices were adjusted for inflation following this [guide](https://towardsdatascience.com/adjusting-prices-for-inflation-in-pandas-daaaa782cd89).
  
 ## Statistical Analysis
- 
+The statistics analysis was approached with two goals
+ - Provide answers to our initial set of questions 
+ - To provide context
+   for features in the machine learning model.
+
+In approaching responding to these goals we looked for ways to assess the features by central tendency and frequency count.  In addition we wanted to be able to visually navigate features with large quantities of values.  
+
+For this reason we produced functions to assist with the task of:
+
+ - Determining how much of the dataset the most frequent values took up
+ - Making dataframe adjustments 
+ - Providing the needed descriptive statistics for our assessment
+
+These functions and their use are located in Statistical_Analysis notebook.  Statistical_Analysis_Light allows navigation of the dataset that is more user-friendly for those wishing to use it, but was not flexible enough on dataframe adjustments for our analysis.
 ## Machine Learning Model
 Three preliminary supervised machine learning models: Linear Regression, Random Forest, and Gradient Boost were prepared to determine the best algorithm for the prediction of IMDb film ratings. The three models were created without any additional data processing to evaluate the metrics and noise of each individual system. The Random Forest model produced the highest r² score, which evaluates the performance of a regression-based machine learning model by measuring the amount of variance in the predictions explained by the linear model. Root mean square error (RMSE), or the square root of the average of the squared value of all error, and mean absolute error (MAE), or the average error, were two other model metrics used to evaluate these models. 
 
