@@ -80,6 +80,7 @@ To prevent overfitting, a grid search with cross validation was utilized to dete
 More detailed descriptive statistics are available in Statistical_Analysis.ipynb
 
 **Which studio produces the highest rated movies?**
+
 ![enter image description here](https://raw.githubusercontent.com/AleksKostrycka/Movie_Review_Project/main/Images/Studio_1.png)
 ![enter image description here](https://raw.githubusercontent.com/AleksKostrycka/Movie_Review_Project/main/Images/Studio_2.png)
 
@@ -94,6 +95,7 @@ In order to account for the large quantity of studios producing small amounts of
 
 
 **What genre is the most popular? (the highest rated)**
+
 ![enter image description here](https://raw.githubusercontent.com/AleksKostrycka/Movie_Review_Project/main/Images/genre_1.png)
 ![enter image description here](https://raw.githubusercontent.com/AleksKostrycka/Movie_Review_Project/main/Images/genre_2.png)
 
