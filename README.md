@@ -78,9 +78,11 @@ To prevent overfitting, a grid search with cross validation was utilized to dete
 ## Results
 ### Statistical Analysis
 More detailed descriptive statistics are available in Statistical_Analysis.ipynb
+
 **Which studio produces the highest rated movies?**
 ![enter image description here](https://raw.githubusercontent.com/AleksKostrycka/Movie_Review_Project/main/Images/Studio_1.png)
 ![enter image description here](https://raw.githubusercontent.com/AleksKostrycka/Movie_Review_Project/main/Images/Studio_2.png)
+
 In order to account for the large quantity of studios producing small amounts of films, a 5 film threshold was used to filter the results.  They were then ranked by median, wherein we see the most popular studios.
 -   Pixar Animation Studios
 -   Studio Ghibli
@@ -94,6 +96,7 @@ In order to account for the large quantity of studios producing small amounts of
 **What genre is the most popular? (the highest rated)**
 ![enter image description here](https://raw.githubusercontent.com/AleksKostrycka/Movie_Review_Project/main/Images/genre_1.png)
 ![enter image description here](https://raw.githubusercontent.com/AleksKostrycka/Movie_Review_Project/main/Images/genre_2.png)
+
 While making note that musical/music and biography had the highest by median; comedy, action, and drama produce so many films as to make up ~75% of the data.  Taking into account that studios are picking these 3 the most often, drama stands above the others.
 
 
