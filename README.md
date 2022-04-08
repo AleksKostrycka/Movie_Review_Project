@@ -15,6 +15,38 @@ In today's world we have so many different ways of watching movies, which also a
 
 In our project we will present our machine learning model and outcome, describe and show the findings related to the questions above through statistical analysis and data presentation in Tableau.
 
+## Tableau Dashboard:
+
+To be able to quickly describe and summarize out entire dataset we decided to use Tablaeu and its functionality to create the Movie Data Dashboard. This can be found under the link here: [Movie Data Dashboard](https://public.tableau.com/app/profile/aleks.kostrycka/viz/MovieReviewPresentation/Dashboard1?publish=yes). We created visualizations in Tableau to baseline the audience and users of our model on the contents of the data we utilized. We found that creating this dashboard allowed us to touch on key metrics within the data in a clean and succinct way. To summarize the data we called out the number of movies in the data, median, average, min and max as well as created several graphs based on genre, rating, studio. As well as information tables summarizing Director, Actor and Movie Info. 
+
+Figure 1
+![This is an image](https://github.com/AleksKostrycka/Movie_Review_Project/blob/readmealeks/Images/Figure%201.png?raw=true)
+
+Another function of the Dashboard is the filterablitly on all the figures seen above. One of our objectives when starting this project was to create a platform that will allow the user to narrow in on a particular movie of interest. Whether the criteria might be their favorite genre, actor, director or studio the user can quickly turn on the correct filters and find the right movie they might be interested in re watching or find something new by their favorite stars/studios/directors. 
+
+For example if a user was interested in seeing an Adam Sandler comedy they might not have seen before, the filters in the image below can be turned on. To show see the highest rated Adam Sandler comedies and we are able to idetify Punch-Drunk Love as a potential movie to watch which has a 7.3 rating, well above the average in the dataset. 
+
+Figure 2
+![This is an image](https://github.com/AleksKostrycka/Movie_Review_Project/blob/readmealeks/Images/Figure%202.png?raw=true)
+
+Then we can use the Reset Filter button seen in Figure 1 to clear all filters that we just established. 
+
+Our goal was to answer 2 of our initial questions using the Tableau Dashboard:
+* Does the actor affect the rating of the movie?
+* Does the director affect the rating of the movie?
+
+To answer our first question "Does the actor affect the movie rating?" We decided to narrow down our set to focus on  one genra, comedy to enable us to give a more percise answer. Once the dataset is filtered on comedy we can see that Steve Martin has 24 comedy movies within the dataset. Looking at the overall results of his movies, the average, min and max we can assume that if he does come out with a new movie this will likely receive the same score as we see in the dataset. The caliber and name recognition of the actor affects the rating. 
+
+Figure 3
+![This is an image](https://github.com/AleksKostrycka/Movie_Review_Project/blob/readmealeks/Images/Figure%203.png?raw=true)
+
+The same approach was taken to answer our second question to narrow down comedy directors. Despite his personal life, within the dataset it is clear the Woody Allen has directed the most comedies. 33 Comedies with a very high avg rating of 6.99. In Figure 4 we can present and conclude that, when looking at his work alone, there is a good chance that a movie being directed by Woody Allen will have a higher rating. 
+
+Figure 4
+![This is an image](https://github.com/AleksKostrycka/Movie_Review_Project/blob/readmealeks/Images/Figure%204.png?raw=true)
+
+There is a lot of applicability to this dashboard, above we only described a few functions. However when it comes to improvements we can see that more movies would make this dashboard more complete and all encompasing. Also a distinction between fan and critic rating would ehance the information. Another feature would be helpful is a where to watch this movie feature. That would direct the users to the platform where they can find this movie. 
+
 ## Summary of Data Preparation
 Once we found the data through [dataset](https://www.kaggle.com/danielgrijalvas/movies) our next step was to prep the data set to ensure it was usable and complete. This was done by utilizing Python (Pandas and Sqlalchemy), PostgresSQL, and Jupyter Notebook. 
 The ETL process was as follow, extracting the two CSV files, the movie dataset and an inflation dataset. The inflation data set was used to normalize our currency values. The data was then converted into dataframes using Panadas, then loaded into PostgresSQL for transformation. Docker was used to host PostgresSQL, creating a simialr environment across all team members. An ELT was done instead, since transforming the data in PostgresSQL is a faster and efficient way to clean the data compared to Pandas. In the transformation process, we found the budget column had over 2,000 null values. Through various conversation and additional research, we decided that this feature was not entirely necessary as budget was found to have a weak correlation with the outcome of a film. At the end our movie dataset consisted of 5420 rows. 
